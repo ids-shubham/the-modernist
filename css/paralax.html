@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            color: #777;
+        }
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            position: relative;
+            opacity: 10;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bgimg-1 {
+            background-image: url("https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80");
+            min-height: 100%;
+        }
+
+        .bgimg-2 {
+            background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80");
+            min-height: 400px;
+        }
+
+        .bgimg-3 {
+            background-image: url("https://images.unsplash.com/photo-1598084991519-c90900bc9df0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+            min-height: 400px;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+        }
+
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 10px;
+        }
+
+        .aboutme {
+            color: rgb(0, 0, 0);
+            background-color: rgba(18, 16, 16, 0.427);
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+        }
+
+        .edu {
+            position: relative;
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+        }
+
+        .CM {
+            background-color: transparent;
+            font: 400 15px/1.8 "Lato", sans-serif;
+            font-size: 25px;
+            color: #f7f7f7;
+        }
+
+        h3 {
+            /* letter-spacing: 5px; */
+            text-transform: uppercase;
+            font: 20px "Lato", sans-serif;
+            text-align: top;
+            color: #111;
+        }
+
+        footer {
+            max-height: 2px;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+
+            .bgimg-1,
+            .bgimg-2,
+            .bgimg-3 {
+                background-attachment: scroll;
+            }
+        }
+
+        .fo {
+            /* padding: 56px 400px; */
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            /* text-align: justify; */
+            margin: 0 auto;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 35%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        input[type="submit"] {
+            padding: 0.5em 1.5em;
+            background-color: #4caf50;
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg-1">
+        <!-- <div class="caption">
+            <span class="border">W E L C O M E</span>
+        </div> -->
+    </div>
+
+    <!-- ----------------------------------------- -->
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="CM">EDUCATION</span>
+
+        </div>
+    </div>
+    <div class="edu">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad minima placeat voluptates eaque in soluta ex
+        inventore quod, voluptate recusandae est dolore unde eos minus officiis dignissimos tempore cupiditate neque
+        dolorem accusamus corporis autem. Corporis necessitatibus libero fugiat tempora accusantium sunt distinctio
+
+    </div>
+    <!-- ----------------------------------------- -->
+    <div class="bgimg-2">
+        <div class="caption">
+            <span class="CM">CONTACT ME</span>
+        </div>
+    </div>
+    <div class="fo">
+        <form action="/" method="post">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo dolor, aperiam molestiae accusantium
+            consequatur recusandae magnam quas blanditiis distinctio quae.
+            <p>
+                <label>name:</label>
+                <input type="text" name="username" />
+            </p>
+            <p>
+                <label>Email:</label>
+                <input type="email" name="email" />
+            </p>
+            <input type="submit" value="submit" />
+        </form>
+    </div>
+    <!-- ----------------------------------------- -->
+    <div class="bgimg-3">
+        <div class="caption">
+            <span class="border">See you soon!</span>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+
+</body>
+
+
+</html>

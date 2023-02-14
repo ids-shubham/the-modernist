@@ -10,6 +10,17 @@
 }
 
 @font-face {
+    font-family: 'Roboto-Light';
+    src: url(../fonts/Roboto-Light.ttf)
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(../fonts/Roboto-Thin.ttf)
+}
+
+
+@font-face {
     font-family: 'Roboto-Regular';
     src: url(../fonts/Roboto-Bold.ttf)
 }
@@ -29,6 +40,7 @@
     background-image: url(../images/global-image.jpg);
     width: 100%;
     background-repeat: no-repeat;
+    background-position: top;
 }
 
 .global-media-wrapper {
@@ -65,6 +77,10 @@
     text-transform: uppercase;
 }
 
+.sign-up{
+    display: none;
+}
+
 /* ************* cs-btn ********** */
 .cs-btn {
     display: flex;
@@ -86,7 +102,7 @@
     background-color: #fff;
     color: #181818;
     font-size: 13px;
-    padding: 15px 50px;
+    padding: 18px 60px;
     text-transform: uppercase;
     border-radius: 50px;
 }
@@ -113,10 +129,10 @@
     font-family: 'Roboto-Bold';
     text-decoration: none;
     color: #ffffff;
-    padding: 17px 40px;
+    padding: 15px 35px;
     background: linear-gradient(to right, #df4927 0%, #f39f31 100%);
     border-radius: 50px;
-    font-size: 13px;
+    font-size: 14px;
     text-transform: uppercase;
 }
 
@@ -127,29 +143,29 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 82px;
-    margin-top: -160px;
+    margin-top: -120px;
 }
 
 .box {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 65px 65px 65px 45px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 40px 55px 40px 55px;
     background-color: #ffffff;
 }
 
 .box h1 {
     font-family: 'Roboto-Bold';
     color: #282828;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 .box p {
     color: #7d7d7d;
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto-Light';
+    font-weight: 400;
     width: 100%;
     max-width: 260px;
     line-height: 25px;
     padding: 15px 0px;
-    font-weight: 100;
     margin: auto;
     font-size: 14px;
 }
@@ -164,8 +180,8 @@
     font-family: 'Roboto-Bold';
     background-color: #f3a032;
     color: #ffffff;
-    padding: 15px 30px;
-    font-size: 12px;
+    padding: 14px 30px;
+    font-size: 14px;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 50px;
@@ -177,6 +193,27 @@
     font-size: 14px;
     text-transform: capitalize;
     font-family: 'Roboto-Bold';
+}
+
+#active {
+    background: #f3a032;
+}
+
+#active a {
+    color: #ffffff;
+}
+
+#active h1 {
+    color: #ffffff;
+}
+
+#active p {
+    color: #ffffff;
+}
+
+#active h2 {
+    background-color: #ffffff;
+    color: #282828;
 }
 
 .box:hover a {
@@ -204,21 +241,22 @@
 .why-we-title {
     width: 100%;
     text-align: center;
-    padding: 60px 0px 20px 0px;
+    padding: 100px 0px 60px 0px;
 }
 
 .why-we-title h1 {
     font-family: 'Roboto-Bold';
     color: #282828;
-    font-size: 64px;
+    font-size: 50px;
     text-transform: capitalize;
     padding-bottom: 10px;
 }
 
 .why-we-title span {
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto-Light';
+    font-weight: bolder;
     color: #767676;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .why-we-wrap {
@@ -234,9 +272,10 @@
     width: 100%;
     max-width: 290px;
     color: #767676;
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto-Light';
+    font-weight: bolder;
     margin: auto;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 35px;
     padding: 20px 0px;
 }
@@ -245,27 +284,28 @@
 .working-background {
     background-color: #f6f6f6;
     width: 100%;
-    padding: 70px 0px
+    padding: 150px 0px
 }
 
 .why-we-working {
     width: 100%;
-    padding: 0px 0px 70px 0px;
+    padding: 0px 0px 100px 0px;
     text-align: center;
 }
 
 .why-we-working h1 {
     font-family: 'Roboto-Bold';
     color: #282828;
-    font-size: 64px;
+    font-size: 45px;
     text-transform: capitalize;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
 }
 
 .why-we-working span {
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto-Light';
+    font-weight: bolder;
     color: #767676;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .why-working-para-box {
@@ -287,6 +327,11 @@
     font-size: 36px;
 }
 
+#active {
+    color: #ffffff;
+    background-color: #f39f31;
+}
+
 .why-working-para-box:hover {
     background-color: #f3a032;
 }
@@ -302,24 +347,25 @@
     justify-content: center;
     gap: 210px;
     flex-wrap: wrap;
-    padding: 100px 0px 50px 0px;
+    padding: 140px 0px 80px 0px;
 }
 
 .mobile-title h1 {
     font-family: 'Roboto-Bold';
-    font-size: 64px;
+    font-size: 50px;
     color: #282828;
     padding-bottom: 12px;
 }
 
 .mobile-title p {
     color: #767676;
-    font-size: 15px;
+    font-size: 17px;
     width: 100%;
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto-Light';
+    font-weight: bolder;
     max-width: 564px;
     margin: auto;
-    line-height: 30px;
+    line-height: 36px;
     padding-bottom: 10px;
 }
 
@@ -327,18 +373,14 @@
     font-family: 'Roboto-Bold';
     color: #f3a032;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 13.8px;
     text-decoration: underline;
 }
 
 .mobile-btn-image {
-    padding-top: 25px;
+    padding-top: 40px;
     display: flex;
     gap: 20px;
-}
-
-.mobile-btn-image img {
-    width: 100%;
 }
 
 .mobile-image img {
@@ -349,7 +391,7 @@
 .Agencies-background {
     background-color: #f6f6f6;
     width: 100%;
-    padding: 100px 0px 80px 0px;
+    padding: 150px 0px 100px 0px;
 }
 
 .Agencies-title {
@@ -359,31 +401,34 @@
 .Agencies-title h1 {
     font-family: 'Roboto-Bold';
     color: #282828;
-    font-size: 64px;
+    font-size: 50px;
     padding-bottom: 10px;
 }
 
 .Agencies-title span {
-    font-family: 'Roboto-Regular';
     color: #767676;
-    font-size: 13px;
+    font-family: 'Roboto-Light';
+    font-size: 16px;
     width: 100%;
     display: block;
-    line-height: 25px;
+    line-height: 35px;
+    font-weight: bolder;
     margin: 0px 0px;
-    max-width: 480px;
-    padding-bottom: 50px;
+    max-width: 560px;
+    padding-bottom: 70px;
 }
 
 .Agencies-list ul li {
     list-style: none;
     width: 100%;
     margin: -25px 0px 0px 0px;
-    font-size: 14px;
+    font-size: 16px;
     max-width: 625px;
+    font-family: 'Roboto-Light';
+    font-weight: bolder;
     padding-left: 49px;
     line-height: 30px;
-    font-family: 'Roboto-Regular';
+
     color: #767676;
 }
 
@@ -391,7 +436,7 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
     flex-wrap: wrap;
     gap: 22px;
 }
@@ -407,9 +452,15 @@
 .publisher-background {
     background-image: url(../images/publisher-img.png);
     width: 100%;
-    padding: 160px 0px;
+    padding: 130px 0px; 
+    position: relative;
+    opacity: 10;
+    height: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .publisher-tile {
@@ -422,7 +473,7 @@
     color: #ffffff;
     font-family: 'Roboto-Bold';
     text-transform: capitalize;
-    font-size: 64px;
+    font-size: 50px;
     padding-bottom: 10px;
 }
 
@@ -431,10 +482,10 @@
     font-family: 'Roboto-Regular';
     display: block;
     width: 100%;
-    line-height: 28px;
-    font-size: 14px;
+    line-height: 35px;
+    font-size: 16px;
     margin: auto;
-    max-width: 580px;
+    max-width: 660px;
     padding-bottom: 100px;
 }
 
@@ -445,11 +496,12 @@
 }
 
 i.fa.fa-play {
-    border: 4px solid #ffffff;
+    border: 6px solid #ffffff;
     border-radius: 50px;
-    padding: 8px 12px;
-    width: 40px;
-    height: 40px;
+    padding: 12px 18px;
+    width: 60px;
+    font-size: 25px;
+    height: 60px;
 }
 
 /* **************fact-tile***************************** */
@@ -465,22 +517,22 @@ i.fa.fa-play {
 
 .fact-tile h1 {
     font-family: 'Roboto-Bold';
-    font-size: 64px;
+    font-size: 50px;
     color: #282828;
-    text-transform: uppercase;
-    padding-bottom: 12px;
+    padding-bottom: 20px;
 }
 
 .fact-tile span {
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto-Light';
     color: #767676;
-    font-size: 13px;
+    font-size: 16px;
     width: 100%;
     display: block;
-    line-height: 25px;
+    line-height: 30px;
+    font-weight: bolder;
     margin: auto;
-    max-width: 575px;
-    padding-bottom: 50px;
+    max-width: 675px;
+    padding-bottom: 85px;
 }
 
 .fact-wrap {
@@ -488,7 +540,16 @@ i.fa.fa-play {
     justify-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 50px;
+}
+
+.Fact-image {
+    text-align: center;
+}
+
+.fact-wrap h4:hover {
+    text-align: center;
+    border-bottom: 3px solid #f3a032;
 }
 
 .fact-wrap h4 {
@@ -496,11 +557,12 @@ i.fa.fa-play {
     padding-top: 25px;
     color: #282828;
     text-align: center;
-    line-height: 22px;
-    max-width: 143px;
-    font-size: 13px;
+    line-height: 32px;
+    max-width: 176px;
+    font-size: 16px;
     margin: auto;
     width: 100%;
+    border-bottom: 3px solid #f39f3200;
 }
 
 /* *****************map-image****************** */
@@ -514,9 +576,9 @@ i.fa.fa-play {
 
 .map-title {
     text-align: center;
-    width: 55%;
     margin: auto;
-    padding: 70px 0px;
+    width: 70%;
+    padding: 100px 0px;
     background-color: #ffffff;
 }
 
@@ -529,7 +591,7 @@ i.fa.fa-play {
 .map-title h2 {
     font-family: 'Roboto-Bold';
     color: #282828;
-    font-size: 24px;
+    font-size: 36px;
     padding: 10px 0px 25px 0px;
 }
 
@@ -541,11 +603,12 @@ i.fa.fa-play {
 }
 
 .copyright h4 {
-    font-family: 'Segoe UI';
+    font-family: 'Roboto-Light';
+    font-weight: 800;
     color: #767676;
-    width: 50%;
+    width: 47%;
     margin: auto;
-    line-height: 23px;
+    line-height: 30px;
     padding-bottom: 20px;
 }
 
@@ -556,12 +619,22 @@ i.fa.fa-play {
 .social-icons i {
     padding-left: 20px;
     padding-right: 20px;
+    font-size: 23px;
 }
 
 /* ********************media-queries******************* */
 @media screen and (max-width: 1400px) {
     .global-media-wrapper {
         padding: 15px 40px 15px 40px;
+    }
+
+    .Agencies-title {
+        text-align: center;
+    }
+
+    .Agencies-title span {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -572,7 +645,7 @@ i.fa.fa-play {
     }
 
     .nav-bar ul a {
-        padding: 0px 10px;
+        padding: 0px 8px;
     }
 }
 
@@ -594,20 +667,32 @@ i.fa.fa-play {
         margin: 6px 0px;
     }
 
+    .sign-up {
+        display: block;
+        background-color: #47474794;
+        border-radius: 50px;
+    }
+    li.sign-up a {
+        padding: 18px 60px;
+    }
     .nav-bar {
         height: 0px;
         position: absolute;
         top: 60px;
         left: 0;
         right: 0;
-        background-color: #f6f6f6;
+        background-color: #000000;
         transition: 0.5s;
         overflow: hidden;
         z-index: 1;
     }
 
     .nav-bar.active {
-        height: 580px;
+        height: 703px;
+    }
+
+    .cs-btn {
+        display: none;
     }
 
     .nav-bar ul {
@@ -621,12 +706,91 @@ i.fa.fa-play {
 
     .nav-bar.active ul {
         opacity: 1;
-        padding: 140px 0px;
+        padding: 100px 0px 0px 0px;
+
     }
 
     .nav-bar ul li a {
         margin-bottom: 30px;
-        color: #282828;
+        color: #ffffff;
+        margin-top: 30px;
         display: block;
     }
+
+    .box {
+        margin-bottom: -50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .why-we-title h1 {
+        padding-top: 50px;
+    }
+
+    .why-working-wrap {
+        display: block;
+    }
+
+    .mobile-title {
+        margin: 0px 30px;
+    }
+
+    .why-working-para-box {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .mobile-btn-image {
+        display: block;
+    }
+
+    .mobile-btn-image img {
+        margin-bottom: 20px;
+    }
+
+    .Agencies-background {
+        padding: 40px 20px 20px 20px;
+    }
+
+    .mobile-image {
+        margin-top: -160px;
+    }
+
+    .publisher-background {
+        padding: 50px 30px;
+    }
+
+    .fact-background {
+        padding: 50px 30px;
+    }
+
+    .map-title {
+        width: 100%;
+        padding: 60px 0px
+    }
+
+    .copyright h4 {
+        width: 85%
+    }
+
+    .global-agency-title h1 {
+        font-size: 30px;
+    }
+    .global-agency{
+        margin: 45px 0px 0px 0px;
+        padding-bottom: 173px;
+    }
+    .working-background {
+        padding: 60px 30px;
+    }
+    .wrap-mobile {
+        padding: 80px 0px 50px 0px;
+    }
+}
+@media only screen and (max-width: 567px) {
+    .box{
+        padding: 40px 30px 40px 30px;
+    }
+    .map-title h2 {font-size: 30px;}
+    .why-we-working h1{font-size: 30px;}
 }
