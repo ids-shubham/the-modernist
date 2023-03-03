@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header html</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 90px 0px 90px;
+            background-color: #f4f9f4;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+
+        .nav-bar ul {
+            display: flex;
+        }
+
+        .nav-bar li {
+            list-style: none;
+        }
+
+        .nav-bar ul li a {
+            text-decoration: none;
+            padding: 0px 25px;
+            color: #444444;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .nav-bar ul li a:hover {
+            color: cornflowerblue;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        @media screen and (max-width: 992px) {
+            .header {
+                padding: 0px 30px 0px 30px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+
+            .hamburger .line {
+                width: 30px;
+                height: 3px;
+                background-color: #90b1ad;
+                margin: 6px 0px;
+            }
+
+            .nav-bar {
+                height: 0px;
+                position: absolute;
+                top: 98px;
+                left: 0;
+                right: 0;
+                background-color: #90b1ad;
+                overflow: hidden;
+            }
+
+            .nav-bar ul {
+                display: block;
+                width: fit-content;
+                margin: 30px auto 30px auto;
+                text-align: center;
+            }
+
+            .nav-bar.active ul {
+                opacity: 1;
+            }
+
+            .nav-bar ul li a {
+                color: #fff;
+                display: block;
+                padding-bottom: 15px;
+            }
+
+            .nav-bar.active {
+                height: 253px;
+                padding: 37px 0px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo-dark.png" alt="logo-dark">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us </a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

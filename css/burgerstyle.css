@@ -1,0 +1,641 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url(../fonts/BebasNeue-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url(../fonts/BebasNeueBold.ttf)
+}
+
+@font-face {
+    font-family: 'AlfaSlabOne-Regular';
+    src: url(../fonts/AlfaSlabOne-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-VariableFont_wght';
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf)
+}
+
+/* ********************header and top-bar********************* */
+.header {
+    background-image: url(../images/background.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.top-bar-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.burger-logo {
+    padding-top: 5px;
+}
+
+.burger-logo img {
+    width: 230px;
+}
+
+.express-logo img {
+    width: 360px;
+}
+
+/* **************navigation-bar********************* */
+.nav-bar ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.nav-bar ul li {
+    list-style: none;
+}
+
+.nav-bar ul a {
+    text-decoration: none;
+}
+
+.nav-bar ul li a {
+    padding-left: 55px;
+    font-family: 'BebasNeue-Regular';
+    text-transform: uppercase;
+    color: #3d2514;
+    letter-spacing: 6px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* ************** burger-week***************** */
+
+.burger-week-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-week-left {
+    width: 100%;
+}
+.burger-right-img img{
+    width: 100%;
+}
+.burger-week-left span {
+    color: #3d2514;
+    font-family: 'BebasNeue-Regular';
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 10px;
+    border-style: dashed;
+}
+
+.burger-week-left h1 {
+    font-family: 'AlfaSlabOne-Regular';
+    color: #3d2514;
+    letter-spacing: 6px;
+    padding-top: 20px;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-shadow: #fee8bc 2px 5px;
+}
+
+.burger-week-left h2 {
+    font-family: 'AlfaSlabOne-Regular';
+    color: #3d2514;
+    letter-spacing: 6px;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: -20px;
+    text-shadow: #fee8bc 2px 5px;
+    ;
+}
+
+/* *****************section-images-burger***************** */
+
+.burger-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+.right-burger img {
+    padding-bottom: 30px;
+}
+
+/* <!-- *******************choose burger******************* --> */
+
+.choose-content {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.choose-content h4 {
+    font-family: 'BebasNeue-Regular';
+    color: #3d2514;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 12px 0px;
+    background: #ffc045;
+    margin: 0px auto;
+    width: 20%;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.choose-content h1 {
+    font-family: 'AlfaSlabOne-Regular';
+    color: #3d2514;
+    font-size: 60px;
+    font-weight: 800;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.choose-content p {
+    font-family: 'Montserrat-VariableFont_wght';
+    color: #3d2514;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.burger-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 35px;
+}
+.burger-box img{
+    width: 100%;
+}
+.burger-box h2 {
+    font-family: 'BebasNeue-Regular';
+    color: #3d2514;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 31px 0px 20px 0px;
+    letter-spacing: 2px;
+}
+
+.burger-box h4 {
+    font-family: 'Montserrat-VariableFont_wght';
+    color: #3d2514;
+    padding-bottom: 56px;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.burger-box a {
+    text-decoration: none;
+    background: #bf2222;
+    color: #fff;
+    padding: 20px 80px;
+    font-size: 22px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'BebasNeue-Regular';
+}
+
+.event-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 160px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    padding: 35px 50px;
+}
+.burger-event img{
+    max-width: 500px;
+}
+.event h4 {
+    font-family: 'BebasNeue-Regular';
+    color: #3d2514;
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.event h1 {
+    font-family: 'AlfaSlabOne-Regular';
+    color: #3d2514;
+    font-size: 45px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.event p {
+    color: #3d2514;
+    font-family: 'Montserrat-VariableFont_wght';
+    line-height: 35px;
+    font-size: 21px;
+}
+
+/* *********************form*********************** */
+.form-background {
+    background-image: url(../images/burger8.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-content {
+    width: 100%;
+    text-align: center;
+    padding-top: 180px;
+}
+
+.form-content h3 {
+    font-family: 'BebasNeue-Regular';
+    color: #3d2514;
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.form-content h1 {
+    font-family: 'AlfaSlabOne-Regular';
+    color: #3d2514;
+    font-size: 58px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.form-width {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 260px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="email"] {
+    width: 35%;
+    padding: 27px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    border: 1px solid #d4d1d1;
+    margin-left: 25px;
+    font-size: 19px;
+}
+
+.form-type button {
+    width: 35%;
+    padding: 25px;
+    margin-left: 25px;
+    background: #bf2222;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: 'AlfaSlabOne-Regular';
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+/* *******************footer****************** */
+.footer {
+    background-image: url(../images/pic-burger.png);
+    width: 100%;
+    background-color: #3d2514;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer-content-wrap {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 200px 0px;
+    justify-content: center;
+}
+
+.footer-content p {
+    margin: 0px 0px;
+    width: 60%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    font-family: 'Montserrat-VariableFont_wght';
+}
+
+.footer-content {
+    width: 73%;
+}
+
+.footer-pic img {
+    width: 410px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.icon-footer i {
+    color: #fff;
+    font-size: 40px;
+    margin: 10px 25px 10px 25px;
+}
+
+.icon-footer li {
+    color: #fff;
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    letter-spacing: 2px;
+    font-weight: 500;
+    align-items: center;
+    font-family: 'BebasNeue-Regular';
+}
+
+.copyright-wrap {
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+    justify-content: space-between;
+}
+
+.copy-right {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'BebasNeue-Regular';
+}
+
+.social-icons {
+    color: #fff;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons ul {
+    display: flex;
+    gap: 15px;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons ul li i {
+    background: #fff;
+    color: #000;
+    width: 35px;
+    padding: 7px 8px;
+    text-align: center;
+    border-radius: 10px;
+    height: 35px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .header {
+        padding: 0px 30px 0px 30px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        float: right;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #90b1ad;
+        margin: 6px 0px;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 140px;
+        left: 0;
+        right: 0;
+        background-color: #90b1ad;
+        overflow: hidden;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 30px auto 30px auto;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        color: #fff;
+        display: block;
+        padding-bottom: 15px;
+        padding-left: 0px;
+    }
+
+    .nav-bar.active {
+        height: 253px;
+        padding: 37px 0px;
+
+    }
+
+    .burger-week-wrap,
+    .burger-wrapper,
+    .burger-wrapper,
+    .burger-wrap,
+    .event-wrap,
+    .footer-content-wrap,
+    .copyright-wrap {
+        display: block;
+    }
+
+    .burger-right-img img {
+        width: 100%;
+    }
+
+    .burger-week-left {
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .top-bar-wrap {
+        padding-top: 40px;
+    }
+
+    .choose-content h4 {
+        width: 80%;
+    }
+
+    .burger-box {
+        margin-bottom: 70px;
+    }
+
+    .burger-box img {
+        width: 100%;
+    }
+
+    .event {
+        padding-bottom: 30px;
+    }
+
+    .form-content {
+        padding-top: 60px;
+    }
+
+    .form-width {
+        padding: 20px;
+
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"],
+    input[type="email"],
+    .form-type button {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .footer-content p {
+        width: 100%;
+    }
+
+    .social-icons ul {
+        display: flex;
+        justify-content: left;
+    }
+
+    .copy-right {
+        padding-bottom: 20px;
+    }
+
+    .footer-pic,
+    .footer-content p,
+    .icon-footer,
+    .copyright-wrap {
+        margin-left: 35px;
+    }
+
+    .footer-content-wrap {
+        padding-bottom: 100px;
+    }
+
+    .choose-content p,
+    .burger-box h4 {
+        margin: 0px 60px;
+    }
+
+    .icon-footer i {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .express-logo img {
+        display: none;
+    }
+
+    .burger-wrapper {
+        margin: 0px;
+    }
+
+    .burger-week-left h1 {
+        font-size: 60px;
+    }
+
+    .burger-week-left span {
+        padding: 0px;
+    }
+
+    .footer-pic img {
+        width: 300px;
+    }
+
+    .header {
+        background-size: auto;
+    }
+
+    .form-content h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .burger-event img,
+    .left-burger img,
+    .right-burger img {
+        width: 100%;
+    }
+
+    .burger-wrapper {
+        margin: 0px;
+    }
+
+    .footer-pic img {
+        width: 250px;
+    }
+
+    .choose-content h1 {
+        font-size: 50px;
+    }
+
+    .choose-content p,
+    .burger-box h4 {
+        margin: 0px 20px;
+    }
+
+    .event p {
+        font-size: 18px;
+    }
+
+    .form-content h1 {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .burger-wrapper{
+        margin-left: 0px;
+        text-align: center;
+    }
+}
